@@ -9,4 +9,4 @@ A clone of the productivity chrome app [Momentum](https://chrome.google.com/webs
 - Weather
 - Daily Quote
 - Daily Phote
-- Office Support
+- Offlice Support
