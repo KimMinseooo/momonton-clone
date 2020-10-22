@@ -1,0 +1,33 @@
+body {
+  width: 100%;
+  min-width: 1500px;
+  height: 100%;
+  min-height: 700px;
+}
+body div {
+  opacity: 0.9;
+}
+body .flex__container {
+  width: 100%;
+  display: flex;
+  padding: 120px 280px;
+  justify-content: space-between;
+}
+
+body .body__column {
+  background-color: indianred;
+  border: 2px solid white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 450px;
+  padding: 23px 20px;
+}
+
+.body__column:first-child {
+  padding-top: 100px;
+  padding-bottom: 15px;
+  position: relative;
+}

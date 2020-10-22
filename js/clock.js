@@ -1,5 +1,5 @@
 const clockContainer =document.querySelector(".js-clock"),
-    clockTitle = clockContainer.querySelector(".js-title");
+    clockTitle = clockContainer.querySelector("h1");
 
     /*시간을 얻어오는 함수 */
 function getTime() {

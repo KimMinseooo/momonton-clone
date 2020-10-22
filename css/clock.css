@@ -1,0 +1,9 @@
+.js-clock {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.js-clock h1 {
+  width: 100%;
+  font-size: 80px;
+}

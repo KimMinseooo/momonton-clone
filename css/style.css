@@ -1,0 +1,16 @@
+@import "reset.css";
+@import "clock.css";
+@import "body.css";
+@import "greeting.css";
+@import "input.css";
+@import "warning.css";
+@import "todo.css";
+@import "count.css";
+@import "weather.css";
+body {
+  color: #fcfcfc;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,4 +1,4 @@
-const form =document.querySelector(".js-form"),
+const form =document.querySelector(".js-form-greeting"),
     input =form.querySelector("input"),
     greeting =document.querySelector(".js-greetings");
 
@@ -26,7 +26,7 @@ function askForName() {
 function paintGreeting(text) {
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText =`Hello ${text}`;
+    greeting.innerText =`Nice to meet you! ${text}`;
 }
 
     /*localStorage에서 userName 값 가져오기 */

@@ -1,0 +1,13 @@
+form .js-form-greetings input,
+.body__column h4 {
+  width: 100%;
+}
+form .js-form-greetings input {
+  height: 200%;
+}
+
+.body__column h4 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+}

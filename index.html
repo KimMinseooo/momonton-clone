@@ -2,26 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Something</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <title>momonton-clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .js-form-greeting, .js-greetings, .warning ,body {
+            display: none;
+        }
+        .showing {
+            display: block;
+        }
+        .bgImage {
+            width:100%;
+            min-width: 1500px;
+            height: 100%;
+            min-height: 700px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
 </head>
-<body>
+<body class="loading">
+    <div class="flex__container">
+        <div class="body__column">
     <div class="js-clock">
-        <h1 class="js-title">00:00</h1>
+        <h1>00:00</h1>
     </div>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-form form">
+     <form class="js-form-greeting">
         <input type="text" placeholder="What is your name? " />
     </form>
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do" />
+    <h4 class="js-greetings greetings"></h4>
+    <div class="warning">You already have enough todos!<br>finish them first 💣</div>
+            <div class="todo-success">cleared todos : <span class="todo-success-count">0</span></div>
+    </div>
+    <div class="body__column">
+        <form class="js-toDoForm">
+        <input type="text" placeholder="Write a to do" maxlength="16" />
     </form>
-    <ul class="js-toDoList"></ul>
-    <span class="js-weather"></span>
+    <ul class="js-toDoList">
+
+        </ul>
+    </div>
+</div> 
+    <div class="js-weather">
+        <div class="weather__banner">
+            <span></span>
+        </div>
+        <div class="weather__temperature"></div>
+        <div class="weather__error">
+            현 위치정보를 가져올 수 없음
+        </div>
+    </div>
     <script src="js/clock.js"></script>
-    <script src="js/greeting.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/bg.js"></script>
-    <script src="js/weather.js"></script>
+     <script src="js/greeting.js"></script>
+     <script src="js/todo.js"></script>
+   <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script> 
 </body>
 </html>

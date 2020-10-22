@@ -1,0 +1,67 @@
+.js-toDoList {
+  height: 88%;
+}
+
+.js-toDoList li {
+  padding: 4px 0px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fcfcfc;
+}
+
+.js-toDoList li span {
+  width: 270px;
+  position: relative;
+  line-height: 23px;
+}
+@keyframes erase {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+.js-toDoList li span.cleared::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  height: 3px;
+  background: #fcfcfc;
+  animation: erase 0.5s linear forwards;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  width: 25px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exclamationBtn {
+  margin-right: 8px;
+}
+
+.clearBtn {
+  margin-right: 3px;
+  color: rgb(7, 121, 7);
+}
+
+.clearBtn:active {
+  background-color: rgb(7, 121, 7);
+  color: #fcfcfc;
+}
+
+.delBtn {
+  color: rgb(255, 62, 4);
+}
+.delBtn:active {
+  background-color: rgb(255, 62, 4);
+  color: #fcfcfc;
+}

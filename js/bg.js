@@ -2,6 +2,9 @@ const body =document.querySelector("body");
 
 const IMG_NUMBER =3;
 
+function doneLoading(event){
+    body.style.display ="block";
+}
 
 
 function paintImage(imgNumber){
@@ -9,6 +12,7 @@ function paintImage(imgNumber){
     image.src = `images/${imgNumber +1}.jpg`;
     image.classList.add("bgImage")
     body.prepend(image);
+    image.addEventListener("load", doneLoading);
 }
 
 function genRandom(){
